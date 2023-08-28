@@ -563,7 +563,7 @@
         "type": "shelly-gen1",
         "z": "3a6531c095ed69ab",
         "hostname": "192.168.50.78",
-        "description": "Heizstab Status",
+        "description": "shelly",
         "mode": "none",
         "server": "",
         "outputmode": "status",
@@ -573,7 +573,7 @@
         "getstatusoncommand": true,
         "devicetype": "Relay",
         "outputs": 1,
-        "x": 420,
+        "x": 390,
         "y": 200,
         "wires": [
             [
