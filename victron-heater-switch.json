@@ -1,0 +1,645 @@
+[
+    {
+        "id": "1094d61f2e579600",
+        "type": "subflow",
+        "name": "Leistung Stromzähler",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [
+            {
+                "x": 1020,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "0e04c103e96b7c58",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "4deeffa546fe7ccb",
+        "type": "victron-input-gridmeter",
+        "z": "1094d61f2e579600",
+        "service": "com.victronenergy.grid.cgwacs_ttyUSB0_mb1",
+        "path": "/Ac/L1/Power",
+        "serviceObj": {
+            "service": "com.victronenergy.grid.cgwacs_ttyUSB0_mb1",
+            "name": "Grid meter",
+            "paths": [
+                {
+                    "path": "/Ac/Energy/Forward",
+                    "type": "float",
+                    "name": "Total Forward Energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/Energy/Reverse",
+                    "type": "float",
+                    "name": "Total Reverse Energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L1/Current",
+                    "type": "float",
+                    "name": "L1 Current (A)"
+                },
+                {
+                    "path": "/Ac/L1/Energy/Forward",
+                    "type": "float",
+                    "name": "L1 Forward energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/L1/Energy/Reverse",
+                    "type": "float",
+                    "name": "L1 Reverse energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L1/Power",
+                    "type": "float",
+                    "name": "L1 Power (W)"
+                },
+                {
+                    "path": "/Ac/L1/Voltage",
+                    "type": "float",
+                    "name": "L1 Voltage (V)"
+                },
+                {
+                    "path": "/Ac/L2/Current",
+                    "type": "float",
+                    "name": "L2 Current (A)"
+                },
+                {
+                    "path": "/Ac/L2/Energy/Forward",
+                    "type": "float",
+                    "name": "L2 Forward energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/L2/Energy/Reverse",
+                    "type": "float",
+                    "name": "L2 Reverse energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L2/Power",
+                    "type": "float",
+                    "name": "L2 Power (W)"
+                },
+                {
+                    "path": "/Ac/L2/Voltage",
+                    "type": "float",
+                    "name": "L2 Voltage (V)"
+                },
+                {
+                    "path": "/Ac/L3/Current",
+                    "type": "float",
+                    "name": "L2 Current (A)"
+                },
+                {
+                    "path": "/Ac/L3/Energy/Forward",
+                    "type": "float",
+                    "name": "L3 Forward energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/L3/Energy/Reverse",
+                    "type": "float",
+                    "name": "L3 Reverse energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L3/Power",
+                    "type": "float",
+                    "name": "L3 Power (W)"
+                },
+                {
+                    "path": "/Ac/L3/Voltage",
+                    "type": "float",
+                    "name": "L3 Voltage (V)"
+                },
+                {
+                    "path": "/Serial",
+                    "type": "string",
+                    "name": "Serial"
+                }
+            ]
+        },
+        "pathObj": {
+            "path": "/Ac/L1/Power",
+            "type": "float",
+            "name": "L1 Power (W)"
+        },
+        "name": "",
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "faf33042e2733257"
+            ]
+        ]
+    },
+    {
+        "id": "b88640280369042c",
+        "type": "victron-input-gridmeter",
+        "z": "1094d61f2e579600",
+        "service": "com.victronenergy.grid.cgwacs_ttyUSB0_mb1",
+        "path": "/Ac/L2/Power",
+        "serviceObj": {
+            "service": "com.victronenergy.grid.cgwacs_ttyUSB0_mb1",
+            "name": "Grid meter",
+            "paths": [
+                {
+                    "path": "/Ac/Energy/Forward",
+                    "type": "float",
+                    "name": "Total Forward Energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/Energy/Reverse",
+                    "type": "float",
+                    "name": "Total Reverse Energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L1/Current",
+                    "type": "float",
+                    "name": "L1 Current (A)"
+                },
+                {
+                    "path": "/Ac/L1/Energy/Forward",
+                    "type": "float",
+                    "name": "L1 Forward energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/L1/Energy/Reverse",
+                    "type": "float",
+                    "name": "L1 Reverse energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L1/Power",
+                    "type": "float",
+                    "name": "L1 Power (W)"
+                },
+                {
+                    "path": "/Ac/L1/Voltage",
+                    "type": "float",
+                    "name": "L1 Voltage (V)"
+                },
+                {
+                    "path": "/Ac/L2/Current",
+                    "type": "float",
+                    "name": "L2 Current (A)"
+                },
+                {
+                    "path": "/Ac/L2/Energy/Forward",
+                    "type": "float",
+                    "name": "L2 Forward energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/L2/Energy/Reverse",
+                    "type": "float",
+                    "name": "L2 Reverse energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L2/Power",
+                    "type": "float",
+                    "name": "L2 Power (W)"
+                },
+                {
+                    "path": "/Ac/L2/Voltage",
+                    "type": "float",
+                    "name": "L2 Voltage (V)"
+                },
+                {
+                    "path": "/Ac/L3/Current",
+                    "type": "float",
+                    "name": "L2 Current (A)"
+                },
+                {
+                    "path": "/Ac/L3/Energy/Forward",
+                    "type": "float",
+                    "name": "L3 Forward energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/L3/Energy/Reverse",
+                    "type": "float",
+                    "name": "L3 Reverse energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L3/Power",
+                    "type": "float",
+                    "name": "L3 Power (W)"
+                },
+                {
+                    "path": "/Ac/L3/Voltage",
+                    "type": "float",
+                    "name": "L3 Voltage (V)"
+                },
+                {
+                    "path": "/Serial",
+                    "type": "string",
+                    "name": "Serial"
+                }
+            ]
+        },
+        "pathObj": {
+            "path": "/Ac/L2/Power",
+            "type": "float",
+            "name": "L2 Power (W)"
+        },
+        "name": "",
+        "x": 190,
+        "y": 260,
+        "wires": [
+            [
+                "7d642a5de573d492"
+            ]
+        ]
+    },
+    {
+        "id": "f2a569a428a1551d",
+        "type": "victron-input-gridmeter",
+        "z": "1094d61f2e579600",
+        "service": "com.victronenergy.grid.cgwacs_ttyUSB0_mb1",
+        "path": "/Ac/L3/Power",
+        "serviceObj": {
+            "service": "com.victronenergy.grid.cgwacs_ttyUSB0_mb1",
+            "name": "Grid meter",
+            "paths": [
+                {
+                    "path": "/Ac/Energy/Forward",
+                    "type": "float",
+                    "name": "Total Forward Energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/Energy/Reverse",
+                    "type": "float",
+                    "name": "Total Reverse Energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L1/Current",
+                    "type": "float",
+                    "name": "L1 Current (A)"
+                },
+                {
+                    "path": "/Ac/L1/Energy/Forward",
+                    "type": "float",
+                    "name": "L1 Forward energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/L1/Energy/Reverse",
+                    "type": "float",
+                    "name": "L1 Reverse energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L1/Power",
+                    "type": "float",
+                    "name": "L1 Power (W)"
+                },
+                {
+                    "path": "/Ac/L1/Voltage",
+                    "type": "float",
+                    "name": "L1 Voltage (V)"
+                },
+                {
+                    "path": "/Ac/L2/Current",
+                    "type": "float",
+                    "name": "L2 Current (A)"
+                },
+                {
+                    "path": "/Ac/L2/Energy/Forward",
+                    "type": "float",
+                    "name": "L2 Forward energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/L2/Energy/Reverse",
+                    "type": "float",
+                    "name": "L2 Reverse energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L2/Power",
+                    "type": "float",
+                    "name": "L2 Power (W)"
+                },
+                {
+                    "path": "/Ac/L2/Voltage",
+                    "type": "float",
+                    "name": "L2 Voltage (V)"
+                },
+                {
+                    "path": "/Ac/L3/Current",
+                    "type": "float",
+                    "name": "L2 Current (A)"
+                },
+                {
+                    "path": "/Ac/L3/Energy/Forward",
+                    "type": "float",
+                    "name": "L3 Forward energy (bought) (kWh)"
+                },
+                {
+                    "path": "/Ac/L3/Energy/Reverse",
+                    "type": "float",
+                    "name": "L3 Reverse energy (sold) (kWh)"
+                },
+                {
+                    "path": "/Ac/L3/Power",
+                    "type": "float",
+                    "name": "L3 Power (W)"
+                },
+                {
+                    "path": "/Ac/L3/Voltage",
+                    "type": "float",
+                    "name": "L3 Voltage (V)"
+                },
+                {
+                    "path": "/Serial",
+                    "type": "string",
+                    "name": "Serial"
+                }
+            ]
+        },
+        "pathObj": {
+            "path": "/Ac/L3/Power",
+            "type": "float",
+            "name": "L3 Power (W)"
+        },
+        "name": "",
+        "x": 190,
+        "y": 380,
+        "wires": [
+            [
+                "ceb106df1e3af13c"
+            ]
+        ]
+    },
+    {
+        "id": "ceb106df1e3af13c",
+        "type": "change",
+        "z": "1094d61f2e579600",
+        "name": "set",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.PowerL3",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 380,
+        "wires": [
+            [
+                "f16055644de9b212"
+            ]
+        ]
+    },
+    {
+        "id": "7d642a5de573d492",
+        "type": "change",
+        "z": "1094d61f2e579600",
+        "name": "set",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.PowerL2",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 260,
+        "wires": [
+            [
+                "f16055644de9b212"
+            ]
+        ]
+    },
+    {
+        "id": "faf33042e2733257",
+        "type": "change",
+        "z": "1094d61f2e579600",
+        "name": "set",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.PowerL1",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "f16055644de9b212"
+            ]
+        ]
+    },
+    {
+        "id": "f16055644de9b212",
+        "type": "join-wait",
+        "z": "1094d61f2e579600",
+        "name": "",
+        "paths": "[\"PowerL1\", \"PowerL2\", \"PowerL3\"]",
+        "pathsToExpire": "",
+        "useRegex": false,
+        "warnUnmatched": false,
+        "pathTopic": "payload",
+        "pathTopicType": "msg",
+        "correlationTopic": "",
+        "correlationTopicType": "undefined",
+        "timeout": "3",
+        "timeoutUnits": "1000",
+        "exactOrder": "false",
+        "firstMsg": "true",
+        "mapPayload": "false",
+        "disableComplete": false,
+        "persistOnRestart": false,
+        "x": 660,
+        "y": 260,
+        "wires": [
+            [
+                "0e04c103e96b7c58"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "0e04c103e96b7c58",
+        "type": "function",
+        "z": "1094d61f2e579600",
+        "name": "calculatePower",
+        "func": "\npowerSum = msg.payload.PowerL1 + msg.payload.PowerL2 + msg.payload.PowerL3\n\nmsg.payload.PowerSum = powerSum\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98e0b53a9a0fa188",
+        "type": "subflow:1094d61f2e579600",
+        "z": "3a6531c095ed69ab",
+        "name": "",
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "1975ad29780fd97c"
+            ]
+        ]
+    },
+    {
+        "id": "c1b7a66878c72d74",
+        "type": "function",
+        "z": "3a6531c095ed69ab",
+        "name": "TurnShelly",
+        "func": "let puffer = -100 // wie viel strom eingespeißt werden soll, um Bezug zu vermeiden\nlet heater_power_consumption = -2300 // Das was der Heizstab verbraucht\n\nlet power_threshold = heater_power_consumption - puffer\n\n\nlet newShellyState = false\n\nif(! msg.payload.relays[0].ison) {\n    if(msg.payload.PowerSum < threshold) {\n        newShellyState = true\n    }\n}\n\n\nif(msg.payload.relays[0].ison) {\n    if(msg.payload.PowerSum < puffer) {\n        newShellyState = true\n    }\n}\n\nmsg.payload.newShellyState = newShellyState\n\nif(msg.payload.relays[0].ison != newShellyState) {\n    if(newShellyState) {\n        newShellyState = \"on\"\n    } else {\n        newShellyState = \"off\"\n    }\n \n    msg.payload = {\n        relay: 0, \n        turn: newShellyState\n    }\n}\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 400,
+        "wires": [
+            [
+                "e75221240cb48878"
+            ]
+        ]
+    },
+    {
+        "id": "1975ad29780fd97c",
+        "type": "join-wait",
+        "z": "3a6531c095ed69ab",
+        "name": "",
+        "paths": "[\"PowerSum\", \"relays\"]",
+        "pathsToExpire": "",
+        "useRegex": false,
+        "warnUnmatched": false,
+        "pathTopic": "payload",
+        "pathTopicType": "msg",
+        "correlationTopic": "",
+        "correlationTopicType": "undefined",
+        "timeout": "6",
+        "timeoutUnits": "1000",
+        "exactOrder": "false",
+        "firstMsg": "true",
+        "mapPayload": "false",
+        "disableComplete": false,
+        "persistOnRestart": false,
+        "x": 580,
+        "y": 400,
+        "wires": [
+            [
+                "c1b7a66878c72d74"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "267a8e523da351e9",
+        "type": "shelly-gen1",
+        "z": "3a6531c095ed69ab",
+        "hostname": "192.168.50.78",
+        "description": "Heizstab Status",
+        "mode": "none",
+        "server": "",
+        "outputmode": "status",
+        "uploadretryinterval": "5000",
+        "pollinginterval": "5000",
+        "pollstatus": false,
+        "getstatusoncommand": true,
+        "devicetype": "Relay",
+        "outputs": 1,
+        "x": 380,
+        "y": 400,
+        "wires": [
+            [
+                "1975ad29780fd97c"
+            ]
+        ]
+    },
+    {
+        "id": "bc441724d8c9c249",
+        "type": "inject",
+        "z": "3a6531c095ed69ab",
+        "name": "OneTimeStart",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "267a8e523da351e9"
+            ]
+        ]
+    },
+    {
+        "id": "e75221240cb48878",
+        "type": "delay",
+        "z": "3a6531c095ed69ab",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "30",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 990,
+        "y": 400,
+        "wires": [
+            [
+                "267a8e523da351e9",
+                "d767c580927c970d"
+            ]
+        ]
+    },
+    {
+        "id": "d767c580927c970d",
+        "type": "debug",
+        "z": "3a6531c095ed69ab",
+        "name": "debug 66",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 400,
+        "wires": []
+    }
+]
